@@ -8,6 +8,7 @@
 
 body{
     font-family: Nunito, sans-serif;
+    background-color: #eee;
 }
 
 .container{
@@ -22,4 +23,23 @@ body{
 }
 .container h1{
     margin: 20px 0;
+}
+
+.parent{
+    margin: 0 12%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.child{
+    flex-grow: 1;
+    width: 275px;
+    color: #121212;
+    background-color: #fff;
+    border-top: 6px solid #BC6FF1;
+    border-radius: 5px;
+    padding: 8px;
+}
+.child h2{
+    margin: 0 0 8px 0;
 }
