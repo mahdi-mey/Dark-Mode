@@ -26,6 +26,17 @@
     --hover-clr: #aa45ed;
 }
 
+/* selecting dark mode mannualy */
+
+body.theme-dark{
+    --bg-clr: var(--dark-bg-clr);
+    --primary-clr: var(--dark-primary-clr);
+    --text-clr: var(--dark-text-clr);
+    --body-bg: var(--dark-body-bg);
+    --card-bg: var(--dark-card-bg);
+    --hover-clr: var(--dark-hover-clr);
+}
+
 @media(prefers-color-scheme: dark){
     body{
         --bg-clr: var(--dark-bg-clr);
