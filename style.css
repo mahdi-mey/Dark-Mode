@@ -6,13 +6,44 @@
     padding: 0;
 }
 
+:root{
+    --dark-hover-clr: #aa45ed;
+    --dark-bg-clr: #BC6FF1;
+    --dark-primary-clr: #fff;
+    /* todo */
+    --dark-text-clr: #ffffff;
+    /* todo */
+    --dark-body-bg: #333333;
+    --dark-card-bg: rgb(60, 60, 60);
+
+    /* normal */
+    --bg-clr: #BC6FF1;
+    --primary-clr: #fff;
+    --text-clr: #121212;
+    --body-bg: #eee;
+    --border-clr: #000000;
+    --card-bg: #fff;
+    --hover-clr: #aa45ed;
+}
+
+@media(prefers-color-scheme: dark){
+    body{
+        --bg-clr: var(--dark-bg-clr);
+        --primary-clr: var(--dark-primary-clr);
+        --text-clr: var(--dark-text-clr);
+        --body-bg: var(--dark-body-bg);
+        --card-bg: var(--dark-card-bg);
+        --hover-clr: var(--dark-hover-clr);
+    }
+}
+
 body{
     font-family: Nunito, sans-serif;
-    background-color: #eee;
+    background-color: var(--body-bg);
 }
 
 header{
-    background-color: #BC6FF1;
+    background-color: var(--bg-clr);
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -28,16 +59,16 @@ header{
     padding: 5px;
     list-style: none;
     font-size: 18px;
-    color: #fff;
     cursor: pointer;
     transition: all 0.5s ease;
+    color: var(--primary-clr);
 }
 .list li:hover{
-    background-color: #aa45ed;
+    background-color: var(--hover-clr);
     border-radius: 5px;
 }
 .selectbox{
-    background-color: #aa45ed;
+    background-color: var(--hover-clr);
     color: #fff;
     border: none;
     font-size: 18px;
@@ -55,9 +86,11 @@ header{
     word-spacing: 5px;
     margin: 0 0 30px 0;
     line-height: 25px;
+    color: var(--text-clr);
 }
 .container h1{
     margin: 20px 0;
+    color: var(--text-clr);
 }
 
 .parent{
@@ -69,11 +102,11 @@ header{
 .child{
     flex-grow: 1;
     width: 275px;
-    color: #121212;
-    background-color: #fff;
-    border-top: 6px solid #BC6FF1;
     border-radius: 5px;
     padding: 8px;
+    color: var(--text-clr);
+    background-color: var(--card-bg);
+    border-top: 6px solid var(--bg-clr);
 }
 .child h2{
     margin: 0 0 8px 0;
