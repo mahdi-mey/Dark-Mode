@@ -26,8 +26,12 @@
     --hover-clr: #aa45ed;
 }
 
-/* selecting dark mode mannualy */
+body{
+    font-family: Nunito, sans-serif;
+    background-color: var(--body-bg);
+}
 
+/* selecting dark mode mannualy */
 body.theme-dark{
     --bg-clr: var(--dark-bg-clr);
     --primary-clr: var(--dark-primary-clr);
@@ -38,7 +42,7 @@ body.theme-dark{
 }
 
 @media(prefers-color-scheme: dark){
-    body{
+    body.theme-auto{
         --bg-clr: var(--dark-bg-clr);
         --primary-clr: var(--dark-primary-clr);
         --text-clr: var(--dark-text-clr);
@@ -48,10 +52,6 @@ body.theme-dark{
     }
 }
 
-body{
-    font-family: Nunito, sans-serif;
-    background-color: var(--body-bg);
-}
 
 header{
     background-color: var(--bg-clr);
