@@ -16,7 +16,10 @@
     --dark-body-bg: #333333;
     --dark-card-bg: rgb(60, 60, 60);
 
-    /* normal */
+}
+
+body{
+    /* normal or light theme colors */
     --bg-clr: #BC6FF1;
     --primary-clr: #fff;
     --text-clr: #121212;
@@ -24,9 +27,6 @@
     --border-clr: #000000;
     --card-bg: #fff;
     --hover-clr: #aa45ed;
-}
-
-body{
     font-family: Nunito, sans-serif;
     background-color: var(--body-bg);
 }
